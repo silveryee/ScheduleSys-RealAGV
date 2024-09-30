@@ -1,0 +1,63 @@
+{
+  "areaId": 23,
+  "areaName": "重庆仿真",
+  "agvList": {
+    "SIM9": {
+      "agvId": "SIM9",
+      "className": null,
+      "length": 1.0,
+      "width": 0.5,
+      "height": 0.5,
+      "priority": 1,
+      "posInfo": {
+        "edgeId": null,
+        "startNode": "PP65",
+        "endNode": null,
+        "posPercent": 0.0
+      },
+      "statusInfo": {
+        "status": 0,
+        "speed": 1,
+        "nextNode": null,
+        "nextEdge": null,
+      },
+      "orderInfo": {
+        "orderID": null,
+        "targetList": null,
+        "siteList": null
+      },
+      "batteryInfo": {
+        "batteryLevel": 50
+      }
+    },
+    "SIM0": {
+      "agvId": "SIM0",
+      "className": null,
+      "length": 1.0,
+      "width": 0.5,
+      "height": 0.5,
+      "priority": 1,
+      "posInfo": {
+        "edgeId": null,
+        "startNode": "PP1",
+        "endNode": null,
+        "posPercent": 0.0
+      },
+      "statusInfo": {
+        "status": 0,
+        "speed": 1,
+        "nextNode": null,
+        "nextEdge": null
+      },
+      "orderInfo": {
+        "orderID": null,
+        "targetList": null,
+        "siteList": null
+      },
+      "batteryInfo": {
+        "batteryLevel": 50
+      }
+    }
+  }
+}
+

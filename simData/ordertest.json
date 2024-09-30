@@ -1,0 +1,54 @@
+[{
+    "orderId": "00001",
+    "areaId": "Area001",
+    "createTime": "2024/03/18 14:09",
+    "siteList": [
+        {
+            "nodeId": "LM1",
+            "postionX": 190.33,
+            "postionY": 270.2,
+            "nodeTime": 0,
+            "nodeType": "LM"
+        },
+        {
+            "nodeId": "QH1",
+            "postionX": 190.33,
+            "postionY": 270.2,
+            "nodeTime": 0,
+            "nodeType": "QH",
+            "containerId": "00001-01",
+            "container": {
+                "length": 1.5,
+                "width": 0.8,
+                "height": 1.2
+            }
+        },
+        {
+            "nodeId": "LM2",
+            "postionX": 190.33,
+            "postionY": 270.2,
+            "nodeTime": 0,
+            "nodeType": "LM"
+        },
+        {
+            "nodeId": "SH1",
+            "postionX": 210.55,
+            "postionY": 400.8,
+            "nodeTime": 20,
+            "nodeType": "SH",
+            "containerId": "00001-01",
+            "container": {
+                "length": 1.5,
+                "width": 0.8,
+                "height": 1.2
+            }
+        },
+        {
+            "nodeId": "LM3",
+            "postionX": 250.75,
+            "postionY": 450.1,
+            "nodeTime": 25,
+            "nodeType": "PP"
+        }
+    ]
+}]

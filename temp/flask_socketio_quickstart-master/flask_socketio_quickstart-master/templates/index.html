@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>Kingfar HCI</title>
+        <link rel="apple-touch-icon" sizes="76x76" href="{{url_for('static', filename='img/favicon.ico')}}">
+        <link rel="icon" type="image/png" href="{{url_for('static', filename='img/favicon.ico')}}">
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="{{url_for('static', filename='fontawesome/css/all.css')}}">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}"/>
+        <!-- Animation CSS -->
+        <link rel="stylesheet" href="{{url_for('static', filename='css/vendor/aos.css')}}"/>
+    </head>
+    <body> 
+        <!---------- NAVBAR ---------->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-purple fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i class="fas fa-robot mr-2"></i><strong>HCI</strong> Application</a>
+                <div class="navbar-collapse collapse" id="navbarColor02">
+                    <ul class="navbar-nav ml-auto d-flex align-items-center">
+                        <li class="nav-item">
+                            <input type="hidden" id="running_state" value="0">
+                            <button type="button" 
+                                    class="btn btn-block btn-primary btn-round mb-1"
+                                    id="btn_running_state"
+                                    onclick="run_serivce()">
+                                <i class="fas fa-play" id="i_running_state_icon"></i>
+                                <b id="b_running_state_text">启动服务</b>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <main class="container-fluid">
+            <div class="position-relative">
+                <div class="container-fluid text-dark mt-5 pt-5">
+                    <!-- table -->
+                    <table class="table table-left table-hover" id="tbl_log">
+                        <thead class="bg-primary text-white">
+                            <tr align="left">
+                                <th scope="col" style="width:120px;">#</th>
+                                <th scope="col" style="width:300px;">Time</th>
+                                <th scope="col">消息内容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr align="center" class="text-black">
+                                <th scope="row" colspan="3">等待启动 ...</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <!------------ JAVASCRIPTS ---------------->    
+        <script src="{{url_for('static', filename='js/vendor/jquery.min.js')}}" type="text/javascript"></script>
+        <script src="{{url_for('static', filename='js/vendor/popper.min.js')}}" type="text/javascript"></script>
+        <script src="{{url_for('static', filename='js/vendor/bootstrap.min.js')}}" type="text/javascript"></script>
+        <script src="{{url_for('static', filename='js/vendor/share.js')}}" type="text/javascript"></script>
+        <script src="{{url_for('static', filename='js/functions.js')}}" type="text/javascript"></script>
+        <script src="{{url_for('static', filename='js/vendor/aos.js')}}" type="text/javascript"></script>
+        <script src="{{url_for('static', filename='js/socket.io.js')}}" type="text/javascript"></script>
+        <noscript>
+            <style>
+                *[data-aos] {
+                    display: block !important;
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                }
+            </style>
+        </noscript>
+        <script>
+            AOS.init({
+                duration: 700,
+                disable: function () {
+                    var maxWidth = 1200;
+                    return window.innerWidth < maxWidth;
+                }
+            });
+
+            /*
+            开启服务，获取分类运行结果
+            */
+            var line_number = 1;
+            var socket = io();
+
+            // 专门接收后端推送消息
+            socket.on('service_msg', function(data) {
+                var row = "<tr>" +
+                                "<th scope=\"row\">" +  line_number + "</th>" +
+                                "<td align=\"left\">" + data.time + "</td>" +
+                                "<td align=\"left\">" + data.msg  + "</td>" +
+                            "</tr>";                                
+                line_number++;
+                //添加数据到 table 第一行
+                $("#tbl_log tbody").prepend(row);
+            });
+            
+            /*
+             * 运行服务，开始接收推送消息
+             */
+            function run_serivce() {
+                $("#btn_running_state").attr("onclick", "pause_service()");
+                $("#i_running_state_icon").attr("class", "fas fa-pause");
+                $("#b_running_state_text").html("暂停服务");
+                var row = "<tr align=\"center\" class=\"text-success\"><th scope=\"row\" colspan=\"3\">启动成功，开始接收数据 ...</th></tr>"
+                $("#tbl_log tbody").prepend(row);
+                $.ajax({
+                    type: "get",          // 请求方式
+                    url: "start_service", // 请求路径
+                    async: true,          // 异步请求
+                    dataType: "json",     // 预期返回一个 json 类型数据
+                    success: function (data) {   // data是形参名，代表返回的数据
+                        console.log(data);
+                    }
+                });
+            }
+
+            /*
+             * 暂停服务
+             */
+            function pause_service() {
+                $("#btn_running_state").attr("onclick", "run_serivce()");
+                $("#i_running_state_icon").attr("class", "fas fa-play");
+                $("#b_running_state_text").html("启动服务");
+                var row = "<tr align=\"center\" class=\"text-secondary\"><th scope=\"row\" colspan=\"3\">服务暂停，等待开启 ...</th></tr>"
+                $("#tbl_log tbody").prepend(row);
+                $.ajax({
+                    type: "get",          // 请求方式
+                    url: "stop_service",  // 请求路径
+                    async: true,          // 异步请求
+                    dataType: "json",     // 预期返回一个 json 类型数据
+                    success: function (data) {   // data是形参名，代表返回的数据
+                        console.log(data);
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>

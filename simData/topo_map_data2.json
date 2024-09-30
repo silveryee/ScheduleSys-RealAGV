@@ -1,0 +1,323 @@
+{
+    "areaId": "1",
+    "areaName": "Area001",
+    "nodeList": [
+        {
+            "nodeId": "713940745140001",
+            "className": "LocationMark",
+            "instanceName": "LM1",
+            "nodeLoc": {
+                "x": 0.254938,
+                "y": 0.393071
+            }
+        },
+        {
+            "nodeId": "713940745155002",
+            "className": "LocationMark",
+            "instanceName": "LM2",
+            "nodeLoc": {
+                "x": 1.0,
+                "y": 0.393071
+            }
+        },
+        {
+            "nodeId": "713940745170003",
+            "className": "ChargePoint",
+            "instanceName": "LM3",
+            "nodeLoc": {
+                "x": 0.145232,
+                "y": 0.393071
+            }
+        },
+        {
+            "nodeId": "713940745185004",
+            "className": "LocationMark",
+            "instanceName": "LM4",
+            "nodeLoc": {
+                "x": 0.386884,
+                "y": 0.852428
+            }
+        },
+        {
+            "nodeId": "713940745200005",
+            "className": "LocationMark",
+            "instanceName": "QH1",
+            "nodeLoc": {
+                "x": 0.587111,
+                "y": 0.877523
+            }
+        },
+        {
+            "nodeId": "713940745215006",
+            "className": "LocationMark",
+            "instanceName": "SH1",
+            "nodeLoc": {
+                "x": 0.749254,
+                "y": 0.528096
+            }
+        },
+        {
+            "nodeId": "713940745230007",
+            "className": "LocationMark",
+            "instanceName": "LM7",
+            "nodeLoc": {
+                "x": 0.343257,
+                "y": 0.0
+            }
+        },
+        {
+            "nodeId": "713940745245008",
+            "className": "LocationMark",
+            "instanceName": "LM8",
+            "nodeLoc": {
+                "x": 0.689498,
+                "y": 0.0
+            }
+        },
+        {
+            "nodeId": "713940745261009",
+            "className": "LocationMark",
+            "instanceName": "LM9",
+            "nodeLoc": {
+                "x": 0.234191,
+                "y": 0.891435
+            }
+        },
+        {
+            "nodeId": "713940745276010",
+            "className": "ActionPoint",
+            "instanceName": "AP10",
+            "nodeLoc": {
+                "x": 0.0,
+                "y": 1.0
+            }
+        }
+    ],
+    "lineList": [
+        {
+            "lineId": "713940745140001-713940745155002",
+            "lineName": "LM1-QH1",
+            "lineSource": "LM1",
+            "lineTarget": "QH1",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 0.4
+        },
+        {
+            "lineId": "713940745140001-713940745155002",
+            "lineName": "LM1-AP1",
+            "lineSource": "LM1",
+            "lineTarget": "AP1",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 0.8
+        },
+        {
+            "lineId": "713940745140001-713940745155002",
+            "lineName": "AP1-QH1",
+            "lineSource": "AP1",
+            "lineTarget": "QH1",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745155002-713940745140001",
+            "lineName": "QH1-SH1",
+            "lineSource": "QH1",
+            "lineTarget": "SH1",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745155002-713940745140001",
+            "lineName": "QH1-LM2",
+            "lineSource": "QH1",
+            "lineTarget": "LM2",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745170003-713940745140001",
+            "lineName": "LM2-SH1",
+            "lineSource": "LM2",
+            "lineTarget": "SH1",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745140001-713940745170003",
+            "lineName": "SH1-LM3",
+            "lineSource": "SH1",
+            "lineTarget": "LM3",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745185004-713940745200005",
+            "lineName": "LM4-LM5",
+            "lineSource": "LM4",
+            "lineTarget": "LM5",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745200005-713940745185004",
+            "lineName": "LM5-LM4",
+            "lineSource": "LM5",
+            "lineTarget": "LM4",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 2.0
+        },
+        {
+            "lineId": "713940745200005-713940745215006",
+            "lineName": "LM5-LM6",
+            "lineSource": "LM5",
+            "lineTarget": "LM6",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745215006-713940745200005",
+            "lineName": "LM6-LM5",
+            "lineSource": "LM6",
+            "lineTarget": "LM5",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745230007-713940745245008",
+            "lineName": "LM7-LM8",
+            "lineSource": "LM7",
+            "lineTarget": "LM8",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745245008-713940745230007",
+            "lineName": "LM8-LM7",
+            "lineSource": "LM8",
+            "lineTarget": "LM7",
+            "classType": "BezierPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745276010-713940745261009",
+            "lineName": "AP10-LM9",
+            "lineSource": "AP10",
+            "lineTarget": "LM9",
+            "classType": "StraightPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745261009-713940745276010",
+            "lineName": "LM9-AP10",
+            "lineSource": "LM9",
+            "lineTarget": "AP10",
+            "classType": "StraightPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745215006-713940745155002",
+            "lineName": "LM6-LM2",
+            "lineSource": "LM6",
+            "lineTarget": "LM2",
+            "classType": "ArcPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745155002-713940745215006",
+            "lineName": "LM2-LM6",
+            "lineSource": "LM2",
+            "lineTarget": "LM6",
+            "classType": "ArcPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 10.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 1.0
+        },
+        {
+            "lineId": "713940745155002-713940745170003",
+            "lineName": "LM2-CP3",
+            "lineSource": "LM2",
+            "lineTarget": "CP3",
+            "classType": "ArcPath",
+            "direction": null,
+            "lineWeight": 0.0,
+            "lineLength": 1.0,
+            "lineSpeed": 5.0,
+            "lineWidth": 2.0
+        }
+    ],
+    "regionList": [
+        {
+            "regionId": "713940745565025",
+            "regionName": "1",
+            "regionPos": null,
+            "regionSize": null,
+            "regionPath": null
+        }
+    ]
+}

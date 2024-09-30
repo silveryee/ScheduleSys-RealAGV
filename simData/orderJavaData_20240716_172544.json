@@ -1,0 +1,31 @@
+{
+  "orderId": "720409749144001",
+  "areaId": 20,
+  "siteList": [
+    {
+      "nodeId": "PP1",
+      "postionX": 0.0,
+      "postionY": 0.0,
+      "nodeTime": 0
+    },
+    {
+      "nodeId": "AP9",
+      "postionX": 0.0,
+      "postionY": 0.0,
+      "nodeTime": 1
+    },
+    {
+      "nodeId": "LM13",
+      "postionX": 0.0,
+      "postionY": 0.0,
+      "nodeTime": 1
+    },
+    {
+      "nodeId": "LM32",
+      "postionX": 0.0,
+      "postionY": 0.0,
+      "nodeTime": 0
+    }
+  ],
+  "simulation": false
+}

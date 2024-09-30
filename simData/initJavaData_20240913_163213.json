@@ -1,0 +1,509 @@
+{
+  "agvData": {
+    "areaId": "24",
+    "areaName": "北京测试",
+    "agvList": {
+      "agv0505": {
+        "agvId": "agv0505",
+        "className": null,
+        "length": 1.0,
+        "width": 0.5,
+        "height": 0.5,
+        "priority": 1,
+        "posInfo": {
+          "edgeId": "LM6-LM6",
+          "startNode": "LM6",
+          "endNode": "LM6",
+          "posPercent": 0.0
+        },
+        "statusInfo": {
+          "status": 0,
+          "speed": 1,
+          "lastNode": null,
+          "lastEdge": null,
+          "nextNode": null,
+          "nextEdge": null
+        },
+        "orderInfo": {
+          "orderID": null,
+          "targetList": null,
+          "siteList": null
+        },
+        "batteryInfo": {
+          "batteryLevel": 39.0
+        }
+      }
+    }
+  },
+  "graphData": {
+    "areaId": "24",
+    "areaName": "北京测试",
+    "nodeList": [
+      {
+        "nodeId": "726216043697020",
+        "className": "LocationMark",
+        "instanceName": "LM1",
+        "nodeLoc": {
+          "x": 0.1,
+          "y": 0.625
+        }
+      },
+      {
+        "nodeId": "726216043703021",
+        "className": "LocationMark",
+        "instanceName": "LM2",
+        "nodeLoc": {
+          "x": 0.1,
+          "y": 0.7634
+        }
+      },
+      {
+        "nodeId": "726216043706022",
+        "className": "LocationMark",
+        "instanceName": "LM3",
+        "nodeLoc": {
+          "x": 0.5208,
+          "y": 0.9
+        }
+      },
+      {
+        "nodeId": "726216043709023",
+        "className": "LocationMark",
+        "instanceName": "LM5",
+        "nodeLoc": {
+          "x": 0.7025,
+          "y": 0.7019
+        }
+      },
+      {
+        "nodeId": "726216043711024",
+        "className": "LocationMark",
+        "instanceName": "LM6",
+        "nodeLoc": {
+          "x": 0.7025,
+          "y": 0.3058
+        }
+      },
+      {
+        "nodeId": "726216043714025",
+        "className": "LocationMark",
+        "instanceName": "LM7",
+        "nodeLoc": {
+          "x": 0.5057,
+          "y": 0.1
+        }
+      },
+      {
+        "nodeId": "726216043717026",
+        "className": "LocationMark",
+        "instanceName": "LM8",
+        "nodeLoc": {
+          "x": 0.2282,
+          "y": 0.1
+        }
+      },
+      {
+        "nodeId": "726216043719027",
+        "className": "LocationMark",
+        "instanceName": "LM9",
+        "nodeLoc": {
+          "x": 0.2282,
+          "y": 0.3058
+        }
+      },
+      {
+        "nodeId": "726216043722028",
+        "className": "LocationMark",
+        "instanceName": "LM11",
+        "nodeLoc": {
+          "x": 0.2282,
+          "y": 0.625
+        }
+      },
+      {
+        "nodeId": "726216043725029",
+        "className": "LocationMark",
+        "instanceName": "LM13",
+        "nodeLoc": {
+          "x": 0.2282,
+          "y": 0.7634
+        }
+      },
+      {
+        "nodeId": "726216043728030",
+        "className": "LocationMark",
+        "instanceName": "LM14",
+        "nodeLoc": {
+          "x": 0.1,
+          "y": 0.1
+        }
+      },
+      {
+        "nodeId": "726216043731031",
+        "className": "ActionPoint",
+        "instanceName": "AP15",
+        "nodeLoc": {
+          "x": 0.3653,
+          "y": 0.625
+        }
+      },
+      {
+        "nodeId": "726216043734032",
+        "className": "ActionPoint",
+        "instanceName": "AP16",
+        "nodeLoc": {
+          "x": 0.3653,
+          "y": 0.5102
+        }
+      },
+      {
+        "nodeId": "726216043737033",
+        "className": "LocationMark",
+        "instanceName": "LM17",
+        "nodeLoc": {
+          "x": 0.2282,
+          "y": 0.5102
+        }
+      }
+    ],
+    "lineList": [
+      {
+        "lineId": "726216043714025-726216043717026",
+        "lineName": "LM7-LM8",
+        "lineSource": "LM7",
+        "lineTarget": "LM8",
+        "classType": "Straight",
+        "direction": "forwardLine",
+        "lineWeight": 0.0,
+        "lineLength": 2.5,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043717026-726216043719027",
+        "lineName": "LM8-LM9",
+        "lineSource": "LM8",
+        "lineTarget": "LM9",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 1.7,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043722028-726216043725029",
+        "lineName": "LM11-LM13",
+        "lineSource": "LM11",
+        "lineTarget": "LM13",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 1.2,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043725029-726216043706022",
+        "lineName": "LM13-LM3",
+        "lineSource": "LM13",
+        "lineTarget": "LM3",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 3.1,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043709023-726216043711024",
+        "lineName": "LM5-LM6",
+        "lineSource": "LM5",
+        "lineTarget": "LM6",
+        "classType": "Straight",
+        "direction": "forwardLine",
+        "lineWeight": 0.0,
+        "lineLength": 3.5,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043711024-726216043714025",
+        "lineName": "LM6-LM7",
+        "lineSource": "LM6",
+        "lineTarget": "LM7",
+        "classType": "Straight",
+        "direction": "forwardLine",
+        "lineWeight": 0.0,
+        "lineLength": 2.9,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043722028-726216043697020",
+        "lineName": "LM11-LM1",
+        "lineSource": "LM11",
+        "lineTarget": "LM1",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 1.1,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043697020-726216043703021",
+        "lineName": "LM1-LM2",
+        "lineSource": "LM1",
+        "lineTarget": "LM2",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 1.2,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043703021-726216043725029",
+        "lineName": "LM2-LM13",
+        "lineSource": "LM2",
+        "lineTarget": "LM13",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 1.1,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043706022-726216043709023",
+        "lineName": "LM3-LM5",
+        "lineSource": "LM3",
+        "lineTarget": "LM5",
+        "classType": "Straight",
+        "direction": "forwardLine",
+        "lineWeight": 0.0,
+        "lineLength": 2.7,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043717026-726216043728030",
+        "lineName": "LM8-LM14",
+        "lineSource": "LM8",
+        "lineTarget": "LM14",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 1.1,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043728030-726216043697020",
+        "lineName": "LM14-LM1",
+        "lineSource": "LM14",
+        "lineTarget": "LM1",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 4.6,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043719027-726216043737033",
+        "lineName": "LM9-LM17",
+        "lineSource": "LM9",
+        "lineTarget": "LM17",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 1.8,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043737033-726216043722028",
+        "lineName": "LM17-LM11",
+        "lineSource": "LM17",
+        "lineTarget": "LM11",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 1.0,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043737033-726216043734032",
+        "lineName": "LM17-AP16",
+        "lineSource": "LM17",
+        "lineTarget": "AP16",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 1.2,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043722028-726216043731031",
+        "lineName": "LM11-AP15",
+        "lineSource": "LM11",
+        "lineTarget": "AP15",
+        "classType": "Straight",
+        "direction": "bidirection",
+        "lineWeight": 0.0,
+        "lineLength": 1.2,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043717026-726216043719027",
+        "lineName": "LM9-LM8",
+        "lineSource": "LM9",
+        "lineTarget": "LM8",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 1.7,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043722028-726216043725029",
+        "lineName": "LM13-LM11",
+        "lineSource": "LM13",
+        "lineTarget": "LM11",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 1.2,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043725029-726216043706022",
+        "lineName": "LM3-LM13",
+        "lineSource": "LM3",
+        "lineTarget": "LM13",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 3.1,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043722028-726216043697020",
+        "lineName": "LM1-LM11",
+        "lineSource": "LM1",
+        "lineTarget": "LM11",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 1.1,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043697020-726216043703021",
+        "lineName": "LM2-LM1",
+        "lineSource": "LM2",
+        "lineTarget": "LM1",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 1.2,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043703021-726216043725029",
+        "lineName": "LM13-LM2",
+        "lineSource": "LM13",
+        "lineTarget": "LM2",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 1.1,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043717026-726216043728030",
+        "lineName": "LM14-LM8",
+        "lineSource": "LM14",
+        "lineTarget": "LM8",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 1.1,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043728030-726216043697020",
+        "lineName": "LM1-LM14",
+        "lineSource": "LM1",
+        "lineTarget": "LM14",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 4.6,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043719027-726216043737033",
+        "lineName": "LM17-LM9",
+        "lineSource": "LM17",
+        "lineTarget": "LM9",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 1.8,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043737033-726216043722028",
+        "lineName": "LM11-LM17",
+        "lineSource": "LM11",
+        "lineTarget": "LM17",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 1.0,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043737033-726216043734032",
+        "lineName": "AP16-LM17",
+        "lineSource": "AP16",
+        "lineTarget": "LM17",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 1.2,
+        "width": 1.0,
+        "maxspeed": 0.3
+      },
+      {
+        "lineId": "726216043722028-726216043731031",
+        "lineName": "AP15-LM11",
+        "lineSource": "AP15",
+        "lineTarget": "LM11",
+        "classType": "Straight",
+        "direction": "NewAdd",
+        "lineWeight": 0.0,
+        "lineLength": 1.2,
+        "width": 1.0,
+        "maxspeed": 0.3
+      }
+    ],
+    "regionList": []
+  }
+}
